@@ -39,3 +39,18 @@ section {
         padding-top: 2rem;
     }
 }
+
+.carousel-item {
+    height: 800px;
+    overflow: hidden;
+  }
+  
+  .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+  }
+  
+  
