@@ -19,14 +19,6 @@ h1 {
   display: inline-block;
 }
 
-.inline-banner {
-  height: 40px;
-  width: auto;
-  margin-left: 10px;
-  vertical-align: middle;
-  border: 2px solid black;
-}
-
 .banner {
   width: 100%;
   max-height: 250px;
