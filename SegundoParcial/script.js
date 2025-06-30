@@ -12,9 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   function mostrarCampos() {
-    // Ocultar todos
     Object.values(groups).forEach(g => g.classList.add('hidden'));
-    // Borrar atributos required
     document.querySelectorAll('input').forEach(i => (i.required = false));
 
     switch (tipoSelect.value) {
