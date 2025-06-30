@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caudal en Tuberías – Básico</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="box">
+    <h1>Calculadora de Caudal</h1>
+
+    <form id="caudalForm">
+      <label>Tipo de cálculo:
+        <select id="tipoTuberia" required>
+          <option value="">Seleccioná…</option>
+          <option value="circular">Tubería circular</option>
+          <option value="rectangular">Tubería rectangular</option>
+          <option value="seccion">Sección conocida</option>
+        </select>
+      </label>
+
+      <div id="circularFields" class="hidden">
+        <label>Diámetro (m):
+          <input type="number" id="diametro" min="0" step="any">
+        </label>
+      </div>
+
+      <div id="rectangularFields" class="hidden">
+        <label>Lado a (m):
+          <input type="number" id="ladoA" min="0" step="any">
+        </label>
+        <label>Lado b (m):
+          <input type="number" id="ladoB" min="0" step="any">
+        </label>
+      </div>
+
+      <div id="seccionFields" class="hidden">
+        <label>Sección (m²):
+          <input type="number" id="seccion" min="0" step="any">
+        </label>
+      </div>
+
+      <div id="velocidadField" class="hidden">
+        <label>Velocidad (m/s):
+          <input type="number" id="velocidad" min="0" step="any">
+        </label>
+      </div>
+
+      <button type="submit">Calcular</button>
+      <button type="button" id="limpiarBtn">Limpiar</button>
+    </form>
+
+    <p id="resultado"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
